@@ -10,8 +10,10 @@ def createList():
 
 # Function to compare the two list and put elements in common in a
 # third list
-def listCompare(first, second, empty):
-    pass
+def listCompare(first, second):
+    resultList = [ i for i in first if i in second] 
+    return resultList
+
 
 # Program Flow
 '''
@@ -22,3 +24,11 @@ Compare lists "Method" overLapList = listCompare(fist, second, empty)
 Print overlap list
 '''
 
+listOne = createList()
+listTwo = createList()
+
+resultList = listCompare(listOne, listTwo)
+
+print(listOne)
+print(listTwo)
+print(resultList)
